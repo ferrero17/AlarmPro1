@@ -18,7 +18,11 @@
         </activity>
         <activity android:name=".AjustesActivity" />
         <activity android:name=".ConfiguracionAlarmaActivity" />
-        <activity android:name=".ConfiguracionRepeticionAlarmaActivity"></activity>
+        <activity android:name=".ConfiguracionRepeticionAlarmaActivity" />
+        <activity android:name=".ConfiguracionRingtoneAlarmaActivity" />
+        <activity android:name=".ConfiguracionPosponerActivity" />
+        <activity android:name=".ConfiguracionSkipActivity" />
+        <activity android:name=".ConfiguracionIteracionActivity"></activity>
     </application>
 
 </manifest>
