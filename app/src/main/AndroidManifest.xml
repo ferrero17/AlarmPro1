@@ -16,13 +16,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AjustesActivity" />
-        <activity android:name=".ConfiguracionAlarmaActivity" />
-        <activity android:name=".ConfiguracionRepeticionAlarmaActivity" />
-        <activity android:name=".ConfiguracionRingtoneAlarmaActivity" />
-        <activity android:name=".ConfiguracionPosponerActivity" />
-        <activity android:name=".ConfiguracionSkipActivity" />
-        <activity android:name=".ConfiguracionIteracionActivity"></activity>
+        <activity
+            android:name=".AjustesActivity"
+            android:label="Ajustes" />
+        <activity
+            android:name=".ConfiguracionAlarmaActivity"
+            android:label="Configuración" />
+        <activity
+            android:name=".ConfiguracionRepeticionAlarmaActivity"
+            android:label="Repetición" />
+        <activity
+            android:name=".ConfiguracionRingtoneAlarmaActivity"
+            android:label="Ringtone" />
+        <activity
+            android:name=".ConfiguracionPosponerActivity"
+            android:label="Posponer" />
+        <activity
+            android:name=".ConfiguracionSkipActivity"
+            android:label="Skip" />
+        <activity
+            android:name=".ConfiguracionIteracionActivity"
+            android:label="Iteracion" />
+        <activity android:name=".PruebaActivity"></activity>
     </application>
 
 </manifest>
