@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn = (Button) findViewById(R.id.ajustesBoton); // Creo una varibale boton i la asigno el boton de ajustes.
+        Button btn = (Button) findViewById(R.id.ajustesBoton2); // Creo una varibale boton i la asigno el boton de ajustes.
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent,0);
             }
         });
-
 
         Button btnAjustesAlarma = (Button) findViewById(R.id.configuracionAlarma);
         btnAjustesAlarma.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent,0);
             }
         });
+
 
 
 
