@@ -14,11 +14,12 @@
 
     <Button
         android:id="@+id/ajustesBoton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:background="@android:drawable/ic_input_add" />
+        android:background="@drawable/engranajes"
+        android:layout_margin="8dp"/>
 
 
 
@@ -73,11 +74,11 @@
 
         <Button
             android:id="@+id/configuracionAlarma"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="8dp"
-            android:background="@android:drawable/stat_notify_more" />
+            android:layout_margin="8dp"
+            android:background="@drawable/engranaje24px" />
 
 
 
