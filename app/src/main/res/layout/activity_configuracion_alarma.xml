@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ConfiguracionAlarmaActivity"
     android:background="@color/colorPrimaryDark"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp">
+    android:paddingBottom="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp">
 
     <RelativeLayout
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
        android:layout_margin="8dp"
         android:background="@color/colorPrimary"
         android:orientation="vertical">
@@ -47,6 +47,9 @@
             android:layout_below="@+id/editText"
             android:layout_margin="8dp"/>
 
+
+
+
         <Button
             android:id="@+id/botonAjustesRepeticion"
             android:layout_width="24dp"
@@ -54,7 +57,7 @@
             android:background="@drawable/ajustesalarma"
             android:layout_below="@+id/editText"
             android:layout_alignParentRight="true"
-            android:layout_margin="8dp"/>
+            android:layout_margin="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,7 +65,7 @@
             android:text="Ringtone"
             android:textSize="15dp"
             android:id="@+id/ringtoneTextView"
-            android:layout_below="@id/textView3"
+            android:layout_below="@id/linea1"
             android:layout_margin="8dp" />
 
 
@@ -70,9 +73,9 @@
             android:id="@+id/botonAjustesRingtone"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_margin="8dp"
+            android:layout_margin="10dp"
             android:background="@drawable/ajustesalarma"
-            android:layout_below="@id/botonAjustesRepeticion"
+            android:layout_below="@id/linea1"
             android:layout_alignParentRight="true"/>
 
         <TextView
@@ -81,16 +84,16 @@
             android:layout_height="wrap_content"
             android:text="Postponer"
             android:textSize="15dp"
-            android:layout_below="@+id/ringtoneTextView"
+            android:layout_below="@+id/linea2"
             android:layout_margin="8dp"/>
 
         <Button
             android:id="@+id/botonAjustesPosponer"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_margin="8dp"
+            android:layout_margin="10dp"
             android:background="@drawable/ajustesalarma"
-            android:layout_below="@id/botonAjustesRingtone"
+            android:layout_below="@id/linea2"
             android:layout_alignParentRight="true"/>
 
         <TextView
@@ -99,16 +102,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
-            android:layout_below="@+id/textViewPosponer"
+            android:layout_below="@+id/linea3"
             android:layout_margin="8dp"/>
 
         <Button
             android:id="@+id/botonAjustesSkip"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_margin="8dp"
+            android:layout_margin="10dp"
             android:background="@drawable/ajustesalarma"
-            android:layout_below="@id/botonAjustesPosponer"
+            android:layout_below="@id/linea3"
             android:layout_alignParentRight="true"/>
 
         <TextView
@@ -117,16 +120,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
-            android:layout_below="@+id/skipTextView"
+            android:layout_below="@+id/linea4"
             android:layout_margin="8dp"/>
 
         <Button
             android:id="@+id/botonAjustesIteracion"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_margin="8dp"
+            android:layout_margin="10dp"
             android:background="@drawable/ajustesalarma"
-            android:layout_below="@id/botonAjustesSkip"
+            android:layout_below="@id/linea4"
             android:layout_alignParentRight="true"/>
 
         <TextView
@@ -135,16 +138,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
-            android:layout_below="@+id/iterationTextView"
+            android:layout_below="@id/linea5"
             android:layout_margin="8dp"/>
 
         <Switch
             android:id="@+id/switch1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/botonAjustesIteracion"
+            android:layout_below="@id/linea5"
             android:layout_alignParentRight="true"
-            android:layout_margin="8dp"/>
+            android:layout_margin="8dp"
+            />
 
         <EditText
             android:id="@+id/MessageEditText"
@@ -152,10 +156,58 @@
             android:layout_height="wrap_content"
             android:hint="Message:"
             android:textSize="15dp"
-            android:layout_below="@+id/VibracionTextView"
-            android:layout_margin="8dp"/>
+          android:layout_below="@id/VibracionTextView"
+            android:layout_margin="20dp"
+            />
 
+        <LinearLayout
+            android:id="@+id/linea1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/textView3"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            />
 
+        <LinearLayout
+            android:id="@+id/linea2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/ringtoneTextView"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            />
+        <LinearLayout
+            android:id="@+id/linea3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/textViewPosponer"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linea4"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/skipTextView"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linea5"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/iterationTextView"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            />
 
 
 
@@ -173,4 +225,4 @@
 
 
 
-</RelativeLayout>
+</ScrollView>
