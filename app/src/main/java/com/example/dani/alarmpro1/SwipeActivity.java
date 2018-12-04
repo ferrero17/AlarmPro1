@@ -133,25 +133,6 @@ public class SwipeActivity extends AppCompatActivity {
              return new Fragment();
         }
 
-
-       /* @Override
-        public Fragment getItem(int position) {
-            switch (position) {
-                case 0: // Fragment # 0 - This will show FirstFragment
-                    return  new RepeatFragment();
-                case 1: // Fragment # 0 - This will show FirstFragment different title
-                    return  new SkipFragment();
-                case 2:
-                    return  new RingtoneFragment();
-                default:
-                    return new Fragment();
-            }
-        }*/
-
-
-
-
-
         @Override
         public int getCount() {
             // Show 3 total pages.
