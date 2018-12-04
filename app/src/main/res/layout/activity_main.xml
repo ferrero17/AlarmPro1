@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
@@ -12,10 +19,11 @@
     android:paddingTop="12dp">
 
 
+
     <Button
         android:id="@+id/ajustesBoton2"
-        android:layout_width="29dp"
-        android:layout_height="29dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:background="@drawable/engranajes"
@@ -31,13 +39,14 @@
             android:fontFamily="serif-monospace"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="60dp"
-            android:layout_alignParentLeft="true"
+            android:gravity="center"
             android:layout_below="@+id/ajustesBoton2"
             android:layout_centerInParent="true"
             android:layout_margin="8dp"/>
 
 
     <RelativeLayout
+        android:id="@+id/Alarma1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/RelojView"
@@ -45,19 +54,21 @@
         android:layout_centerInParent="true"
         android:padding="8dp"
         android:layout_margin="8dp">
-        <TextView
-            android:id="@+id/hora_alarma1tv"
+
+        <Button
+            android:id="@+id/botonHoraAlarma1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
             android:text="07:05"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:layout_margin="8dp"
             />
         <TextView
             android:id="@+id/repet_alarm1tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/hora_alarma1tv"
+            android:layout_below="@id/botonHoraAlarma1"
             android:layout_margin="8dp"
             android:text="L,M,X,J,V" />
 
@@ -84,9 +95,95 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/Alarma2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Alarma1"
+        android:background="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:padding="8dp"
+        android:layout_margin="8dp">
+        <Button
+            android:id="@+id/botonHora2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00"
+            android:textSize="20dp"
+            android:layout_margin="8dp"
+            android:background="@color/colorPrimary"
+            />
+        <TextView
+            android:id="@+id/repet_alarm1tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/botonHora2"
+            android:layout_margin="8dp"
+            android:text="S,D" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Football"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/repet_alarm1tv2"
+            android:layout_below="@id/configuracionAlarma2"
+            android:layout_alignParentRight="true"/>
+
+        <Button
+            android:id="@+id/configuracionAlarma2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/engranaje24px" />
 
 
 
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tiempoRestanteLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Alarma2">
+
+        <TextView
+            android:id="@+id/tiempoRestanteTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work en 12 horas y 23 minutos"
+            android:gravity="center"
+            />
+
+
+    </RelativeLayout>
+
+
+
+ <RelativeLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/tiempoRestanteLayout"
+     android:gravity="center"
+     >
+
+
+     <Button
+         android:id="@+id/botonAñadirAlarma"
+         android:layout_width="45dp"
+         android:layout_height="45dp"
+         android:background="@android:drawable/ic_input_add" />
+
+ </RelativeLayout>
 
 
 </RelativeLayout>
+
+</ScrollView>

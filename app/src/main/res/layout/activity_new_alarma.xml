@@ -14,7 +14,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-       android:layout_margin="8dp"
+        android:layout_margin="8dp"
         android:background="@color/colorPrimary"
         android:orientation="vertical">
 
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:hint="Name:"
             android:textSize="15dp"
-           android:layout_below="@+id/textView2"
+            android:layout_below="@+id/textView2"
             android:layout_margin="8dp"/>
 
 
@@ -155,7 +155,7 @@
             android:layout_height="wrap_content"
             android:hint="Message:"
             android:textSize="15dp"
-          android:layout_below="@id/VibracionTextView"
+            android:layout_below="@id/VibracionTextView"
             android:layout_margin="20dp"
             />
 

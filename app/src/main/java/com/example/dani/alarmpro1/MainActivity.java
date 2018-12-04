@@ -30,12 +30,28 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(v.getContext(),ConfiguracionAlarmaActivity.class);
                 startActivityForResult(intent,0);
 
-
             }
         });
-// wdfwfwfwfwfwfw
+
+        Button btnAñadirAlarma =  (Button) findViewById(R.id.botonAñadirAlarma);
+        btnAñadirAlarma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),NewAlarmaActivity.class);
+                startActivityForResult(intent,0);
+            }
+        });
 
 
+
+        Button btnConfiguarlarma2 = (Button) findViewById(R.id.configuracionAlarma2);
+        btnConfiguarlarma2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), ConfiguracionAlarmaActivity.class);
+                startActivityForResult(intent,0);
+            }
+        });
 
 
     }

@@ -58,5 +58,19 @@ public class ConfiguracionAlarmaActivity extends AppCompatActivity {
         });
 
 
+        Button btnSkipAjustes = (Button) findViewById(R.id.botonAjustesRepeticion);
+        btnSkipAjustes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), SwipeActivity.class);
+                startActivityForResult(intent,0);
+            }
+        });
+
+
+
+
+
+
     }
 }
