@@ -133,6 +133,11 @@ public class SwipeActivity extends AppCompatActivity {
              return new Fragment();
         }
 
+
+
+
+
+
         @Override
         public int getCount() {
             // Show 3 total pages.
