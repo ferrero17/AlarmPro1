@@ -22,27 +22,13 @@
         <activity
             android:name=".ConfiguracionAlarmaActivity"
             android:label="Configuración" />
-        <activity
-            android:name=".ConfiguracionRepeticionAlarmaActivity"
-            android:label="Repetición" />
-        <activity
-            android:name=".ConfiguracionRingtoneAlarmaActivity"
-            android:label="Ringtone" />
-        <activity
-            android:name=".ConfiguracionPosponerActivity"
-            android:label="Posponer" />
-        <activity
-            android:name=".ConfiguracionSkipActivity"
-            android:label="Skip" />
-        <activity
-            android:name=".ConfiguracionIteracionActivity"
-            android:label="Iteracion" />
         <activity android:name=".FaqsActivity" />
         <activity android:name=".NewAlarmaActivity" />
         <activity
             android:name=".SwipeActivity"
             android:label="@string/title_activity_swipe"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PickersActivity"></activity>
     </application>
 
 </manifest>

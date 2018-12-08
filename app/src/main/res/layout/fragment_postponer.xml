@@ -6,17 +6,15 @@
     tools:context=".PostponerFragment">
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ConfiguracionPosponerActivity"
         android:background="@color/colorPrimaryDark">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="8dp"
+            android:layout_margin="16dp"
             android:background="@color/colorPrimary"
             android:orientation="vertical">
 
@@ -90,15 +88,6 @@
                 android:textSize="25dp" />
 
         </LinearLayout>
-
-
-
-
-
-
-
-
-
 
     </ScrollView>
 

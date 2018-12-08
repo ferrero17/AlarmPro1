@@ -54,5 +54,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        Button btnCambiarHora = (Button) findViewById(R.id.botonHoraAlarma1);
+        btnCambiarHora.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), PickersActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
